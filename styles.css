@@ -1,0 +1,196 @@
+@font-face {
+    font-family: open-sans;
+    src: url(OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+/* * {
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    
+} */
+body { margin: 0; padding: 0; font-size: 16px;
+    font-family: Open-Sans, Verdana, Geneva, Tahoma, sans-serif
+ }
+
+p { 
+    font-weight: 100; 
+    font-size: 0.8rem; 
+    margin-bottom: 0.5rem;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 1rem;
+  margin-right: 1rem;
+}
+
+h3 {
+    font-size: 1rem; margin-top: 2rem;
+}
+.icon_attrib,
+.icon_attrib a {
+    font-size: 0.6rem;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 6fr; 
+    /* 1.5fr 1.5fr 1fr; */
+}
+.sidebar {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #667292;
+    color: aliceblue;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 1fr 2rem;
+}
+
+.icon_attrib {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_title { 
+    font-size: 1.2rem;  
+    display: grid; 
+    grid-template-columns: 2rem 1fr;
+    align-items: center;
+}
+.trending ul,
+.menu ul {
+    list-style: none;
+}
+.menu ul {
+    margin: 5rem 0; 
+}
+.trending ul li {
+    display: grid; 
+    align-items: center; 
+    /* height: 1.5rem; */
+}
+.a_li { 
+    display: grid; 
+    grid-template-columns: 3rem 1fr;
+    align-content: center;
+    margin-bottom: 1rem;
+    color: aliceblue;
+}
+span.label {
+    padding-bottom: 5px; 
+    /* vertical-align: middle; */
+}
+li a {
+    text-decoration: none; vertical-align: middle;
+}
+hr {
+    /* background-color: #667292;  */
+    border: 1px dotted #667292aa;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.top {
+    display: grid;
+    grid-template-columns: 2rem 16fr 3fr 2rem 2rem 3fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    align-items: center;
+    margin: 1.6rem 2rem;
+}
+input[type='search'] {
+    border: 1px solid #667292;
+    background-color: #667292;
+    height: 1.5rem;
+    border-radius: 0.75rem;
+    color: aliceblue;
+    padding: 0.2rem 1rem;
+}
+.top .avatar { width: 2rem; height: 2rem; }
+.top .notification { width: 1.2rem; height: 1.2rem; }
+.top > h3 { display:  inline-block; }
+
+.bottom {
+    display: grid;
+    grid-template-columns: 4rem 1fr 25rem;
+    margin: 1rem 2rem; 
+}
+.bottom .avatar { width: 3rem; height: 3rem; margin-right: 30px;}
+.bottom .actions {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+}
+.bottom .name_tag {
+    font-size: 1rem;
+} 
+.bottom .actions > button {
+    height: 30px;
+    width: 100px;
+    margin-left: 30px;
+    border: none; border-radius: 15px;
+    background-color: #667292;
+    color: aliceblue;
+}
+.bottom .hello { display: flex; flex-direction: column; flex: 1 1 0; }
+
+.bottom .hello > p { font-weight: 600; font-size: 0.5rem;} 
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 15px;
+    background-color: lightgray;
+    padding: 0 15px; 
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 15px;
+}
+.card {
+    border-left: 0.5rem solid #ffcc5c;
+    /* margin: 5px; */
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 20px;
+    /* min-height: 0.333fr; */
+    display:grid;
+    grid-template-rows: 2rem 1fr 2rem;
+}
+.card div a {
+    float: right;
+}
+
+.right {
+    grid-area: 1 / 2 /2 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr ;
+}
+.announcements {
+    padding: 24px;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.trending ul li {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    font-size: 0.6rem
+ 
+}
+.trending ul  {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+
+}
